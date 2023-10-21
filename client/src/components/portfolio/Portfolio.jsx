@@ -1,6 +1,17 @@
 import React from "react";
-
+import { all, events, manufacturing, leads } from "../gallery/data";
 const Portfolio = () => {
+  // const handleClick = (e) => {
+  //   let images;
+  //   if (e === "all")
+  //     <div className="gallery">
+  //       {images?.map((image, index) => (
+  //         <div className="gallery-item" key={index}>
+  //           <img src={image} alt={`Image ${index + 1}`} />
+  //         </div>
+  //       ))}
+  //     </div>;
+  // };
   return (
     <div className="sub_page">
       <section className="portfolio_section ">
@@ -11,26 +22,51 @@ const Portfolio = () => {
           <div className="carousel-wrap ">
             <div className="filter_box">
               <nav className="owl-filter-bar">
-                <a href="#" className="item active" data-owl-filter="*">
+                <a
+                  href="#"
+                  className="item active"
+                  data-owl-filter="*"
+                  // onClick={handleClick("all")}
+                >
                   All
                 </a>
-                <a href="#" className="item" data-owl-filter=".decorative">
-                  DECORATIVE
+                <a
+                  href="#"
+                  className="item"
+                  data-owl-filter=".decorative"
+                  // onClick={handleClick("manufacturing")}
+                >
+                  MANUFACTURING
                 </a>
-                <a href="#" className="item" data-owl-filter=".facade">
-                  FACADES{" "}
+                <a
+                  href="#"
+                  className="item"
+                  data-owl-filter=".facade"
+                  // onClick={handleClick("induction")}
+                >
+                  INDUCTION
                 </a>
-                <a href="#" className="item" data-owl-filter=".perforated">
-                  PERFORATED
+                <a
+                  href="#"
+                  className="item"
+                  data-owl-filter=".perforated"
+                  // onClick={handleClick("events")}
+                >
+                  EVENTS
                 </a>
-                <a href="#" className="item" data-owl-filter=".railing">
-                  RAILINGS{" "}
+                <a
+                  href="#"
+                  className="item"
+                  data-owl-filter=".railing"
+                  // onClick={handleClick("leads")}
+                >
+                  Leads
                 </a>
               </nav>
             </div>
           </div>
         </div>
-        <div className="owl-carousel portfolio_carousel">
+        {/* <div className="owl-carousel portfolio_carousel">
           <div className="item decorative">
             <div className="box">
               <div className="img-box">
@@ -79,7 +115,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
